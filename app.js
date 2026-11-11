@@ -59,6 +59,42 @@ function buildEntries(){
   if (onlySaved) entries = entries.filter(v => saved.has(key(v)));
 }
 
+function getNextChapterInfo(){
+  if (!books.length) return null;
+  const currentBookId = Number(opts.book);
+  const currentChapterNum = Number(opts.chapter);
+  const bIndex = books.findIndex(x => x.id === currentBookId);
+  if (bIndex === -1) return null;
+  const currentBook = books[bIndex];
+  if (currentChapterNum < currentBook.chapters.length) {
+    const nextChapter = currentChapterNum + 1;
+    return { bookId: currentBook.id, bookName: currentBook.name, chapter: nextChapter, label: `${currentBook.name} ${nextChapter}`, isNewBook: false };
+  }
+  if (bIndex + 1 < books.length) {
+    const nextBook = books[bIndex + 1];
+    return { bookId: nextBook.id, bookName: nextBook.name, chapter: 1, label: `${nextBook.name} 1`, isNewBook: true };
+  }
+  const firstBook = books[0];
+  return { bookId: firstBook.id, bookName: firstBook.name, chapter: 1, label: `${firstBook.name} 1`, isNewBook: true, isRestart: true };
+}
+
+function getPrevChapterInfo(){
+  if (!books.length) return null;
+  const currentBookId = Number(opts.book);
+  const currentChapterNum = Number(opts.chapter);
+  const bIndex = books.findIndex(x => x.id === currentBookId);
+  if (bIndex === -1) return null;
+  const currentBook = books[bIndex];
+  if (currentChapterNum > 1) {
+    return { bookId: currentBook.id, bookName: currentBook.name, chapter: currentChapterNum - 1, label: `${currentBook.name} ${currentChapterNum - 1}` };
+  }
+  if (bIndex > 0) {
+    const prevBook = books[bIndex - 1];
+    return { bookId: prevBook.id, bookName: prevBook.name, chapter: prevBook.chapters.length, label: `${prevBook.name} ${prevBook.chapters.length}` };
+  }
+  return null;
+}
+
 function renderCountLine(v, meta){
   if (meta.template === 'community') return `<div class="socialline">Curtido por <strong>comunidade_biblica</strong> e outras ${esc(meta.stats.likesText)} pessoas</div>`;
   if (meta.template === 'feature') return `<div class="socialline">Destaque · ${esc(meta.sponsor)}</div>`;
@@ -157,6 +193,24 @@ function vBookAndChapter(v){ return `${v.book} ${v.chapter}`; }
 function createPost(v, index){
   const id = key(v), txt = textOf(v), meta = themeFor(index, v); meta.stats = stats(v); meta.entry = v;
   meta.entryIndex = index;
+  const isLast = !onlySaved && index === entries.length - 1;
+  const nextInfo = isLast ? getNextChapterInfo() : null;
+  const prevInfo = isLast ? getPrevChapterInfo() : null;
+  const nextCardHtml = nextInfo ? `
+    <div class="next-chapter-card">
+      <div class="next-chapter-info">
+        <small>${nextInfo.isNewBook ? (nextInfo.isRestart ? 'Reiniciar leitura' : 'Próximo livro') : 'Fim do capítulo'}</small>
+        <strong>${esc(nextInfo.label)}</strong>
+      </div>
+      <div class="next-chapter-actions">
+        ${prevInfo ? `<button class="prev-chapter-link" type="button">← ${esc(prevInfo.label)}</button>` : ''}
+        <button class="btn-next-chapter" type="button">
+          <span>Ler ${esc(nextInfo.label)}</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>` : '';
+
   const card = document.createElement('article');
   card.className = `post post-${meta.template}`;
   card.innerHTML = `
@@ -171,6 +225,7 @@ function createPost(v, index){
     <div class="engagement"><span>${esc(meta.stats.likesText)} curtidas</span><span>${esc(String(meta.stats.comments))} comentários</span></div>
     ${renderCountLine(v, meta)}
     ${renderCaption(v, meta)}
+    ${nextCardHtml}
     `;
 
   const update = () => {
@@ -185,6 +240,8 @@ function createPost(v, index){
   card.querySelector('.menu').onclick = () => share(`${txt}\n— ${ref(v)}`);
   card.querySelector('.comment').onclick = () => card.querySelector('.translationbox')?.scrollIntoView({behavior:'smooth', block:'center'});
   const cta = card.querySelector('[data-jump="chooser"]'); if (cta) cta.onclick = chooser;
+  const nextBtn = card.querySelector('.btn-next-chapter'); if (nextBtn && nextInfo) nextBtn.onclick = () => jump(nextInfo.bookId, nextInfo.chapter);
+  const prevBtn = card.querySelector('.prev-chapter-link'); if (prevBtn && prevInfo) prevBtn.onclick = () => jump(prevInfo.bookId, prevInfo.chapter);
 
   const carousel = card.querySelector('.art-carousel');
   if(carousel){
