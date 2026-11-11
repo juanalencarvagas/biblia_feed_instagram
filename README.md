@@ -1,14 +1,23 @@
-# Bíblia Feed 4.0 — Feed de layouts variados estilo Instagram
+# Bíblia Feed 5.1 — Feed de layouts variados estilo Instagram
 
 Leitor bíblico pessoal que abre no navegador, mas roda em um servidor Python local **sem instalar bibliotecas adicionais**.
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="Prévia do Bíblia Feed" width="760">
+</p>
+
 ## Iniciar (macOS / Windows / Linux)
 
-1. Extraia o arquivo ZIP.
-2. Abra um terminal **dentro da pasta `biblia_feed_instagram`**.
-3. Execute `python3 app.py` (macOS/Linux) ou `python app.py` (Windows).
-4. Abra `http://127.0.0.1:8765` se a aba não surgir automaticamente.
-5. Para encerrar: `Ctrl+C` no terminal.
+1. Clone o repositório e acesse a pasta do projeto:
+   ```bash
+   git clone https://github.com/juanalencarvagas/biblia_feed_instagram.git
+   cd biblia_feed_instagram
+   ```
+2. Execute o servidor:
+   - **macOS / Linux**: `python3 app.py`
+   - **Windows**: `python app.py`
+3. Abra `http://127.0.0.1:8765` no navegador (ou aguarde a aba abrir automaticamente).
+4. Para encerrar: pressione `Ctrl+C` no terminal.
 
 ## Primeira execução
 
@@ -55,4 +64,5 @@ Depois disso, os arquivos ficam guardados na pasta do projeto (`almeida-livre.js
 - Dez ilustrações temáticas SVG locais acompanham a instalação, escolhidas por palavras do trecho.
 - Imagens de personagens genéricos foram removidas dos cards de retrato, colagem e carrossel para evitar ilustrar indevidamente o texto.
 - Mesmo sem internet, cada card dispõe de ilustração temática local.
-# biblia_feed_instagram
+- Identificador discreto de versículo (`v1`, `v2`, ...) no início de cada trecho nos cards.
+- Navegação direta para o próximo capítulo no rodapé do último card da leitura.
