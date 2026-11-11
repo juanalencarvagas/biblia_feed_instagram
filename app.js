@@ -28,6 +28,8 @@ function ref(v){ return `${v.book} ${v.chapter}:${v.first}${v.last!==v.first?'�
 function refEn(v){ const name = PT_TO_EN[v.book] || v.book; return `${name} ${v.chapter}:${v.first}${v.last!==v.first?'-'+v.last:''}`; }
 function key(v){ return `${v.bookId}:${v.chapter}:${v.first}:${v.last}`; }
 function textOf(v){ return v.items.map(x=>x.text).join(' '); }
+function verseHtml(v){ return v.items.map(x => `<span class="vnum">v${x.number}</span> ${esc(x.text)}`).join(' '); }
+function textWithVerseNums(v){ return v.items.map(x => `v${x.number} ${x.text}`).join(' '); }
 function enTextOf(v){ return (v.itemsEn || []).map(x=>x.text).join(' '); }
 function hash(str){ let h = 0; for (let i=0;i<str.length;i++) h = ((h<<5)-h) + str.charCodeAt(i), h |= 0; return Math.abs(h); }
 function stats(v){ const h = hash(key(v)); const likes = (h % 3200) + 80; return { likes, likesText: likes.toLocaleString('pt-BR'), comments: (h % 240) + 8 }; }
@@ -64,9 +66,10 @@ function renderCountLine(v, meta){
 }
 
 function renderFooterTranslation(v){
-  const text = enTextOf(v).trim();
-  if (!text) return `<div class="translationbox warning"><div class="translationhead"><span>English comparison</span><b>KJV</b></div><div class="translationtext">A tradução KJV será baixada automaticamente na primeira execução com internet disponível.</div></div>`;
-  return `<div class="translationbox"><div class="translationhead"><span>English comparison</span><b>KJV</b></div><div class="translationtext">${esc(text)}</div><div class="translationref">${esc(refEn(v))}</div></div>`;
+  const items = (v.itemsEn || []).filter(x => x.text && x.text.trim());
+  if (!items.length) return `<div class="translationbox warning"><div class="translationhead"><span>English comparison</span><b>KJV</b></div><div class="translationtext">A tradução KJV será baixada automaticamente na primeira execução com internet disponível.</div></div>`;
+  const formatted = items.map(x => `<span class="vnum">v${x.number}</span> ${esc(x.text)}`).join(' ');
+  return `<div class="translationbox"><div class="translationhead"><span>English comparison</span><b>KJV</b></div><div class="translationtext">${formatted}</div><div class="translationref">${esc(refEn(v))}</div></div>`;
 }
 
 // Seleção da cena: cada cena do manifesto (assets/scenes/manifest.json) pontua pelas palavras
@@ -111,7 +114,7 @@ function sceneFor(v){
   return { label: info ? info.label : best, url: `/assets/scenes/${best}${vi ? '_v' + vi : ''}.svg` };
 }
 function renderCardInner(v, meta){
-  const txt = esc(textOf(v));
+  const txt = verseHtml(v);
   const scene = sceneFor(v);
   const imgstyle = `style="--scene-image:url('${scene.url}')"`;
   const verse = `<div class="versecontent"><div class="refupper">${esc(ref(v))}</div><div class="versewords" style="--font-adjust:${Number(opts.font)||0}px">${txt}</div><div class="refbottom">${esc(ref(v))}</div></div>`;
