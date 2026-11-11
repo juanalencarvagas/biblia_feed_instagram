@@ -1,0 +1,3829 @@
+[
+ {
+  "key": "ceu",
+  "label": "céu e nuvens",
+  "words": [
+   "ceu*",
+   "nuvem*",
+   "nuve*",
+   "firmamento",
+   "aurora"
+  ],
+  "prio": 1,
+  "variants": 1
+ },
+ {
+  "key": "chuva",
+  "label": "orvalho e chuva",
+  "words": [
+   "orvalho",
+   "chuva*",
+   "chov*",
+   "gota*",
+   "chuveiro"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "deserto",
+  "label": "deserto",
+  "words": [
+   "deserto*",
+   "areia",
+   "sequidao",
+   "ermo"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "floresta",
+  "label": "floresta e árvores",
+  "words": [
+   "arvore*",
+   "florest*",
+   "bosque",
+   "folha*",
+   "ramo*",
+   "ramos"
+  ],
+  "prio": 1,
+  "variants": 1
+ },
+ {
+  "key": "fogo",
+  "label": "fogo",
+  "words": [
+   "fogo*",
+   "chama*",
+   "brasa*",
+   "brasas",
+   "incendi*"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "jardim",
+  "label": "jardim e flores",
+  "words": [
+   "jardim",
+   "jardins",
+   "flor",
+   "flores",
+   "roseira",
+   "eden"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "mar",
+  "label": "mar e ondas",
+  "words": [
+   "mar",
+   "mares",
+   "onda*",
+   "tempestade",
+   "navio",
+   "navios"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "montanhas",
+  "label": "montanhas",
+  "words": [
+   "monte",
+   "montes",
+   "montanha*",
+   "serra"
+  ],
+  "prio": 1.2,
+  "variants": 1
+ },
+ {
+  "key": "noite",
+  "label": "noite e estrelas",
+  "words": [
+   "noite*",
+   "escuridao",
+   "trevas"
+  ],
+  "prio": 1.2,
+  "variants": 1
+ },
+ {
+  "key": "rio",
+  "label": "rio e água",
+  "words": [
+   "rio",
+   "rios",
+   "ribeiro*",
+   "agua*",
+   "corrente*"
+  ],
+  "prio": 1,
+  "variants": 1
+ },
+ {
+  "key": "amanhecer",
+  "label": "amanhecer",
+  "words": [
+   "amanhecer",
+   "alvorada",
+   "madrugada",
+   "manha",
+   "amanhece*",
+   "alva"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "entardecer",
+  "label": "entardecer",
+  "words": [
+   "entardecer",
+   "poente",
+   "ocaso",
+   "crepusculo"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "sol",
+  "label": "sol",
+  "words": [
+   "sol",
+   "solar",
+   "calor",
+   "meiodia"
+  ],
+  "prio": 1.2,
+  "variants": 1
+ },
+ {
+  "key": "lua",
+  "label": "lua",
+  "words": [
+   "lua",
+   "luar"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "estrelas",
+  "label": "estrelas",
+  "words": [
+   "estrela*",
+   "estrelado"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "nuvens",
+  "label": "nuvens",
+  "words": [
+   "nuvem",
+   "nuvens"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "tempestade",
+  "label": "tempestade",
+  "words": [
+   "tempestade*",
+   "raio",
+   "raios",
+   "trovao",
+   "trovoes",
+   "relampago*",
+   "tormenta",
+   "temporal"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "vento",
+  "label": "vento",
+  "words": [
+   "vento*",
+   "sopro",
+   "folego",
+   "respiro",
+   "soprar",
+   "assopr*"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "arcoiris",
+  "label": "arco-íris",
+  "words": [
+   "arcoiris"
+  ],
+  "prio": 3,
+  "variants": 1
+ },
+ {
+  "key": "neve",
+  "label": "neve e gelo",
+  "words": [
+   "neve",
+   "gelo",
+   "geada",
+   "frio",
+   "frios",
+   "granizo",
+   "nevar",
+   "branco"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "vale",
+  "label": "vale",
+  "words": [
+   "vale",
+   "vales"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "colina",
+  "label": "colina",
+  "words": [
+   "colina*",
+   "outeiro*",
+   "outeiros"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "campo",
+  "label": "campo e pasto",
+  "words": [
+   "campo",
+   "campos",
+   "pasto",
+   "pastos",
+   "prado",
+   "erva",
+   "relva",
+   "verdejante",
+   "planicie",
+   "planice"
+  ],
+  "prio": 1.4,
+  "variants": 1
+ },
+ {
+  "key": "ilha",
+  "label": "ilha",
+  "words": [
+   "ilha",
+   "ilhas",
+   "costa",
+   "litoral"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "praia",
+  "label": "praia",
+  "words": [
+   "praia*",
+   "margem",
+   "margens",
+   "orla",
+   "porto",
+   "conchas"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "caverna",
+  "label": "caverna",
+  "words": [
+   "caverna*",
+   "gruta*",
+   "cova",
+   "covas",
+   "esconderijo",
+   "esconder*"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "oasis",
+  "label": "oásis",
+  "words": [
+   "oasis",
+   "tamareira*",
+   "palmeira*",
+   "palmeiras"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "terra",
+  "label": "terra e barro",
+  "words": [
+   "terra",
+   "terras",
+   "chao",
+   "po",
+   "barro",
+   "argila",
+   "solo",
+   "terreno"
+  ],
+  "prio": 1.2,
+  "variants": 1
+ },
+ {
+  "key": "cachoeira",
+  "label": "cachoeira",
+  "words": [
+   "cachoeira*",
+   "torrente*",
+   "torrentes",
+   "catarata*",
+   "enchente",
+   "enxurrada"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "poco",
+  "label": "poço e cisterna",
+  "words": [
+   "poco",
+   "pocos",
+   "cisterna*"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "lago",
+  "label": "lago",
+  "words": [
+   "lago",
+   "lagos",
+   "lagoa",
+   "tanque",
+   "tanques",
+   "reflexo"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "terremoto",
+  "label": "terremoto",
+  "words": [
+   "terremoto*",
+   "tremor",
+   "tremer",
+   "tremeu",
+   "abalo",
+   "abalou",
+   "sacudi*",
+   "tremeram"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "rocha",
+  "label": "rocha e fortaleza",
+  "words": [
+   "rocha",
+   "rochas",
+   "rochedo*",
+   "fortaleza*",
+   "refugio*",
+   "abrigo",
+   "baluarte",
+   "penhasco*",
+   "firme"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "cedro",
+  "label": "cedros do Líbano",
+  "words": [
+   "cedro",
+   "cedros",
+   "libano"
+  ],
+  "prio": 3,
+  "variants": 1
+ },
+ {
+  "key": "oliveira",
+  "label": "oliveira e azeite",
+  "words": [
+   "oliveira*",
+   "oliva*",
+   "azeite*",
+   "azeitona*",
+   "oleo",
+   "oleos",
+   "unc*",
+   "ungi*",
+   "unguento*"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "figueira",
+  "label": "figueira",
+  "words": [
+   "figueira*",
+   "figo",
+   "figos"
+  ],
+  "prio": 3,
+  "variants": 1
+ },
+ {
+  "key": "videira",
+  "label": "videira e uvas",
+  "words": [
+   "videira*",
+   "vinha*",
+   "vinhas",
+   "uva",
+   "uvas",
+   "vinho*",
+   "vindima",
+   "lagar"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "palmeira",
+  "label": "palmeiras",
+  "words": [
+   "palma",
+   "palmas",
+   "tamara"
+  ],
+  "prio": 1.2,
+  "variants": 1
+ },
+ {
+  "key": "espinhos",
+  "label": "espinhos",
+  "words": [
+   "espinho",
+   "espinhos",
+   "cardo",
+   "cardos",
+   "abrolho",
+   "abrolhos",
+   "sarca",
+   "sarcas",
+   "urtiga"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "semeador",
+  "label": "semeador",
+  "words": [
+   "semeador",
+   "semear",
+   "semeou",
+   "semeia",
+   "sementeira",
+   "lavrador",
+   "lavoura",
+   "arar",
+   "arado",
+   "plantar",
+   "plantou"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "lirios",
+  "label": "lírios do campo",
+  "words": [
+   "lirio",
+   "lirios"
+  ],
+  "prio": 3,
+  "variants": 1
+ },
+ {
+  "key": "raiz",
+  "label": "raiz e broto",
+  "words": [
+   "raiz",
+   "raizes",
+   "broto",
+   "brotar",
+   "brotou",
+   "renovo",
+   "tronco",
+   "fundamento",
+   "fundamentos"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "pastor",
+  "label": "pastor e ovelhas",
+  "words": [
+   "pastor*",
+   "ovelha*",
+   "rebanho*",
+   "cordeiro*",
+   "abel",
+   "davi"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "peixe",
+  "label": "pesca",
+  "words": [
+   "peixe*",
+   "pescador*",
+   "pescadores",
+   "rede",
+   "redes",
+   "genesare",
+   "galileia",
+   "pedro",
+   "tiago",
+   "andre"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "pomba",
+  "label": "pomba e Espírito",
+  "words": [
+   "pomba*",
+   "espirito",
+   "batiz*",
+   "batism*",
+   "jonas"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "cavalo",
+  "label": "cavalo",
+  "words": [
+   "cavalo*",
+   "cavalos",
+   "egua",
+   "cavaleiro*",
+   "carro*",
+   "carros",
+   "corcel"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "jumento",
+  "label": "jumento",
+  "words": [
+   "jumento*",
+   "asno*",
+   "asna*",
+   "burro*",
+   "jumentinho"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "camelo",
+  "label": "camelo",
+  "words": [
+   "camelo*",
+   "camelos",
+   "dromedario*"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "boi",
+  "label": "boi e gado",
+  "words": [
+   "boi",
+   "bois",
+   "vaca*",
+   "gado",
+   "bezerro*",
+   "novilho*",
+   "touro*"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "cabra",
+  "label": "cabras e bodes",
+  "words": [
+   "cabra*",
+   "cabrito*",
+   "bode*",
+   "bodes",
+   "cabras"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "cervo",
+  "label": "corça e cervo",
+  "words": [
+   "cervo*",
+   "corca*",
+   "cerva*",
+   "gazela*",
+   "gazelas",
+   "veado*",
+   "antilope"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "lobo",
+  "label": "lobo",
+  "words": [
+   "lobo*",
+   "lobos",
+   "lobinho",
+   "chacal*",
+   "raposa*",
+   "raposas"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "leao",
+  "label": "leão",
+  "words": [
+   "leao",
+   "leoes",
+   "leoa*",
+   "lea"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "urso",
+  "label": "urso",
+  "words": [
+   "urso*",
+   "ursa"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "passaros",
+  "label": "aves do céu",
+  "words": [
+   "passaro*",
+   "passarinho*",
+   "passaros",
+   "ave",
+   "aves",
+   "andorinha*",
+   "pardal*",
+   "pardais",
+   "voar",
+   "voou",
+   "voam",
+   "asa*",
+   "asas",
+   "ninho*",
+   "ninhos"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "aguia",
+  "label": "águia",
+  "words": [
+   "aguia*",
+   "falcao",
+   "gaviao",
+   "abutre*"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "corvo",
+  "label": "corvos",
+  "words": [
+   "corvo*",
+   "corvos"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "serpente",
+  "label": "serpente",
+  "words": [
+   "serpente*",
+   "cobra*",
+   "cobras",
+   "vibora*",
+   "serpentes",
+   "dragao"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "baleia",
+  "label": "grande peixe",
+  "words": [
+   "baleia*",
+   "ventre",
+   "abismo",
+   "profundezas",
+   "abismos",
+   "profundeza"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "abelha",
+  "label": "abelhas e mel",
+  "words": [
+   "abelha*",
+   "mel",
+   "favo*",
+   "favos"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "gafanhoto",
+  "label": "gafanhotos",
+  "words": [
+   "gafanhoto*",
+   "praga*",
+   "pragas",
+   "locusta*"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "ovelhaperdida",
+  "label": "ovelha perdida",
+  "words": [
+   "perdida",
+   "perdido",
+   "perdi",
+   "extraviada",
+   "extraviad*",
+   "desgarrad*",
+   "procura*",
+   "achar",
+   "achei",
+   "encontr*",
+   "resgat*"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "ras",
+  "label": "rãs",
+  "words": [
+   "ra",
+   "ras",
+   "sapo*",
+   "sapos"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "gado",
+  "label": "o gado e o rebanho",
+  "words": [
+   "boi",
+   "bois",
+   "novilho",
+   "novilhos",
+   "bezerro",
+   "bezerros",
+   "vaca",
+   "vacas",
+   "touro",
+   "touros",
+   "gado",
+   "cabrito",
+   "cabritos",
+   "bode",
+   "bodes",
+   "cabra",
+   "cabras"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "tabuas",
+  "label": "tábuas da Lei",
+  "words": [
+   "moises",
+   "mandamento*",
+   "tabua*",
+   "sinai",
+   "lei",
+   "alianca"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "tenda",
+  "label": "tenda e patriarcas",
+  "words": [
+   "tenda*",
+   "tabernaculo",
+   "acampamento",
+   "abraao",
+   "isaque",
+   "jaco",
+   "sara",
+   "patriarca*",
+   "peregrin*"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "trigo",
+  "label": "trigo e colheita",
+  "words": [
+   "trigo",
+   "pao",
+   "paes",
+   "seara",
+   "ceifa",
+   "colheita",
+   "semente*",
+   "celeiro",
+   "rute",
+   "boaz"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "trono",
+  "label": "trono e reino",
+  "words": [
+   "rei",
+   "reis",
+   "reino*",
+   "trono*",
+   "coroa",
+   "salomao",
+   "ester",
+   "saul",
+   "farao",
+   "cetro"
+  ],
+  "prio": 1.5,
+  "variants": 1
+ },
+ {
+  "key": "cruz",
+  "label": "cruz",
+  "words": [
+   "cruz",
+   "crucific*",
+   "calvario",
+   "ressurrei*",
+   "ressuscit*",
+   "sangue",
+   "sepulcro",
+   "pascoa"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "luz",
+  "label": "luz e lâmpada",
+  "words": [
+   "luz",
+   "lampada*",
+   "candeia",
+   "candelabro",
+   "resplandec*",
+   "brilh*",
+   "isaias"
+  ],
+  "prio": 1.6,
+  "variants": 1
+ },
+ {
+  "key": "casa",
+  "label": "casa e família",
+  "words": [
+   "casa",
+   "casas",
+   "familia",
+   "lar",
+   "telhado",
+   "maria",
+   "marta",
+   "debora",
+   "porta",
+   "mae",
+   "filho",
+   "filhos"
+  ],
+  "prio": 1,
+  "variants": 1
+ },
+ {
+  "key": "cidade",
+  "label": "cidade e muralhas",
+  "words": [
+   "cidade*",
+   "jerusalem",
+   "siao",
+   "nineve",
+   "sodoma",
+   "jerico",
+   "roma"
+  ],
+  "prio": 1.5,
+  "variants": 1
+ },
+ {
+  "key": "incenso",
+  "label": "incenso e fumaça",
+  "words": [
+   "incenso",
+   "fumaca",
+   "perfume*",
+   "aroma",
+   "cheiro",
+   "cheiroso",
+   "turibulo"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "templo",
+  "label": "templo",
+  "words": [
+   "templo",
+   "templos",
+   "santuario",
+   "santuarios",
+   "santo",
+   "santos",
+   "santa",
+   "santidade",
+   "santificar",
+   "santificado",
+   "santifica",
+   "sagrado",
+   "consagrar",
+   "consagrado",
+   "consagracao"
+  ],
+  "prio": 2.0,
+  "variants": 1
+ },
+ {
+  "key": "sinagoga",
+  "label": "sinagoga",
+  "words": [
+   "sinagoga",
+   "sinagogas",
+   "escriba",
+   "escribas",
+   "fariseu",
+   "fariseus",
+   "doutor",
+   "doutores",
+   "rabi",
+   "rabino",
+   "ler",
+   "leu",
+   "leitura",
+   "leram",
+   "lido"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "jerusalem_muros",
+  "label": "muros e portas",
+  "words": [
+   "muro",
+   "muros",
+   "muralha",
+   "muralhas",
+   "porta",
+   "portas",
+   "portao",
+   "portoes",
+   "entrada",
+   "entrar",
+   "entrou",
+   "entrai",
+   "abrir",
+   "abriu",
+   "abri",
+   "aberta",
+   "fechar",
+   "fechou",
+   "chave",
+   "chaves",
+   "bater",
+   "bate",
+   "batei"
+  ],
+  "prio": 2.0,
+  "variants": 1
+ },
+ {
+  "key": "vila_nazare",
+  "label": "vila na colina",
+  "words": [
+   "nazare",
+   "belem",
+   "betania",
+   "cafarnaum",
+   "jerico",
+   "emaus",
+   "aldeia",
+   "aldeias",
+   "vila",
+   "vilas",
+   "povoado",
+   "cidadezinha",
+   "carpinteiro",
+   "carpinteiros"
+  ],
+  "prio": 2.4,
+  "variants": 4
+ },
+ {
+  "key": "guerra",
+  "label": "guerra e batalha",
+  "words": [
+   "guerra",
+   "guerras",
+   "batalha",
+   "batalhas",
+   "combate",
+   "combater",
+   "combatei",
+   "exercito",
+   "exercitos",
+   "soldado",
+   "soldados",
+   "guerreiro",
+   "guerreiros",
+   "inimigo",
+   "inimigos",
+   "inimiga",
+   "adversario",
+   "adversarios",
+   "armas",
+   "arma",
+   "espada",
+   "espadas",
+   "lanca",
+   "lancas",
+   "flecha",
+   "flechas",
+   "arco",
+   "arcos",
+   "escudos",
+   "escudo",
+   "cavalaria",
+   "vencer",
+   "vencedor",
+   "venceu",
+   "vitoria",
+   "derrota",
+   "derrotar",
+   "lutar",
+   "luta",
+   "lutou",
+   "conquistar"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "escudo",
+  "label": "proteção e escudo",
+  "words": [
+   "protecao",
+   "proteger",
+   "protegeu",
+   "protege",
+   "guardar",
+   "guarda",
+   "guardou",
+   "guardai",
+   "defender",
+   "defesa",
+   "defensor",
+   "socorro",
+   "socorrer",
+   "ajuda",
+   "ajudar",
+   "ajudador",
+   "auxilio",
+   "salvar",
+   "salvou",
+   "salva",
+   "salvacao",
+   "salvador",
+   "libertar",
+   "libertou",
+   "liberta",
+   "livramento",
+   "livrar",
+   "livrai",
+   "resgate",
+   "resgatar",
+   "redimir",
+   "redencao",
+   "redentor"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "armadura",
+  "label": "elmo e armadura",
+  "words": [
+   "elmo",
+   "couraca",
+   "armadura",
+   "armaduras",
+   "lanca",
+   "lancas",
+   "capacete"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "carros_guerra",
+  "label": "carros de guerra",
+  "words": [
+   "carro",
+   "carros",
+   "carruagem",
+   "carruagens",
+   "cavaleiro",
+   "cavaleiros"
+  ],
+  "prio": 2.0,
+  "variants": 4
+ },
+ {
+  "key": "coroa_espinhos",
+  "label": "coroa de espinhos",
+  "words": [
+   "flagelar",
+   "flagelado",
+   "zombar",
+   "zombaram",
+   "zombador",
+   "escarnecer",
+   "escarneceu",
+   "escarnio",
+   "humilhado",
+   "traicao",
+   "traiu",
+   "trair",
+   "traidor",
+   "traidores",
+   "denegar",
+   "negou"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "carta_escritura",
+  "label": "cartas e Escrituras",
+  "words": [
+   "carta",
+   "cartas",
+   "escrevo",
+   "escrevi",
+   "escreveu",
+   "escrever",
+   "escrito",
+   "escritos",
+   "escritura",
+   "escrituras",
+   "evangelho",
+   "evangelhos",
+   "livro",
+   "livros",
+   "pergaminho",
+   "pergaminhos",
+   "tinta",
+   "pena"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "fome",
+  "label": "fome e alimento",
+  "words": [
+   "fome",
+   "faminto",
+   "famintos",
+   "comer",
+   "comeu",
+   "comei",
+   "comida",
+   "alimento",
+   "alimentar",
+   "alimentou",
+   "banquete",
+   "mesa",
+   "ceia",
+   "refeicao",
+   "festim",
+   "jantar",
+   "almoco",
+   "mantimento",
+   "mantimentos",
+   "saciar",
+   "saciou",
+   "sacia",
+   "saciados"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "sede",
+  "label": "sede e água viva",
+  "words": [
+   "sede",
+   "sedento",
+   "sedentos",
+   "beber",
+   "bebeu",
+   "bebei",
+   "bebida",
+   "taca",
+   "calice",
+   "copo"
+  ],
+  "prio": 2.3,
+  "variants": 1
+ },
+ {
+  "key": "alimentos",
+  "label": "leite, mel e frutos",
+  "words": [
+   "leite",
+   "mel",
+   "farinha",
+   "azeite",
+   "oleo",
+   "fruto",
+   "frutos",
+   "figo",
+   "figos",
+   "romas",
+   "tamaras",
+   "comida",
+   "alimento",
+   "alimentos",
+   "cevada",
+   "lentilhas"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "riqueza",
+  "label": "riquezas e ouro",
+  "words": [
+   "riqueza",
+   "riquezas",
+   "rico",
+   "ricos",
+   "ouro",
+   "prata",
+   "tesouro",
+   "tesouros",
+   "dinheiro",
+   "moeda",
+   "moedas",
+   "mamom",
+   "ganancia",
+   "avareza",
+   "avarento",
+   "comprar",
+   "vender",
+   "vendeu",
+   "comprou",
+   "preco"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "metais",
+  "label": "ouro, prata e bronze",
+  "words": [
+   "ouro",
+   "prata",
+   "bronze",
+   "ferro",
+   "cobre",
+   "metal",
+   "metais",
+   "estanho",
+   "chumbo",
+   "ourives",
+   "fundir",
+   "fundiu"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "pedras",
+  "label": "pedras e monumento",
+  "words": [
+   "pedra",
+   "pedras",
+   "pedreira",
+   "marco",
+   "marcos",
+   "monumento",
+   "pilar",
+   "pilares",
+   "apedrejar",
+   "apedrejado"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "madeira",
+  "label": "madeira e carpintaria",
+  "words": [
+   "madeira",
+   "madeiro",
+   "lenha",
+   "carpinteiro",
+   "machado",
+   "machados",
+   "serra",
+   "serrar",
+   "cedros",
+   "acacia",
+   "tabua",
+   "tabuas"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "roupas",
+  "label": "roupas e tecidos",
+  "words": [
+   "roupa",
+   "roupas",
+   "veste",
+   "vestes",
+   "vestido",
+   "vestidos",
+   "vestir",
+   "vestiu",
+   "manto",
+   "mantos",
+   "tunica",
+   "linho",
+   "tecido",
+   "tecidos",
+   "tear",
+   "cinto"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "sete_candelabro",
+  "label": "o candelabro de sete braços",
+  "words": [
+   "sete",
+   "candelabro",
+   "lampadas",
+   "numero",
+   "contados",
+   "contou"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "tributo_dizimo",
+  "label": "dízimos e tributos",
+  "words": [
+   "dizimo",
+   "dizimos",
+   "tributo",
+   "tributos",
+   "imposto",
+   "impostos",
+   "primicia",
+   "primicias"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "idolos_bezerro",
+  "label": "ídolos e o bezerro de ouro",
+  "words": [
+   "idolo",
+   "idolos",
+   "deuses",
+   "imagem",
+   "imagens",
+   "esculpida",
+   "esculpidas",
+   "bezerro",
+   "adorar",
+   "adoraram",
+   "adorou"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "caminho",
+  "label": "caminho",
+  "words": [
+   "caminho*",
+   "vereda*",
+   "estrada*",
+   "passos",
+   "jornada",
+   "emaus",
+   "paulo",
+   "saulo",
+   "timoteo"
+  ],
+  "prio": 1.6,
+  "variants": 1
+ },
+ {
+  "key": "amor",
+  "label": "amor",
+  "words": [
+   "amor",
+   "amar",
+   "amou",
+   "amados",
+   "amado",
+   "amada",
+   "amai",
+   "amais",
+   "amamos",
+   "amavel",
+   "caridade",
+   "querido",
+   "querida",
+   "amizade",
+   "amigo",
+   "amigos"
+  ],
+  "prio": 2.6,
+  "variants": 1
+ },
+ {
+  "key": "alegria",
+  "label": "alegria e festa",
+  "words": [
+   "alegria",
+   "alegre",
+   "alegrar",
+   "alegrai",
+   "alegrou",
+   "alegrem",
+   "regozij*",
+   "regozijo",
+   "festa*",
+   "festejar",
+   "celebr*",
+   "cantai",
+   "cantar",
+   "dancar",
+   "danca",
+   "jubilo",
+   "jubilar",
+   "riso",
+   "rir",
+   "feliz",
+   "felicidade"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "paz",
+  "label": "paz e quietude",
+  "words": [
+   "paz",
+   "pacifico",
+   "pacificador",
+   "pacificadores",
+   "sossego",
+   "quietude",
+   "calma",
+   "tranquil*",
+   "repouso",
+   "repousar",
+   "descanso",
+   "descansar",
+   "descansai",
+   "aquieta*",
+   "sabado"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "tristeza",
+  "label": "tristeza e choro",
+  "words": [
+   "tristeza",
+   "triste",
+   "tristes",
+   "chorar",
+   "chorou",
+   "choro",
+   "chorai",
+   "lagrima*",
+   "lamento",
+   "lamentar",
+   "lamentacao",
+   "lamentacoes",
+   "luto",
+   "lutar",
+   "pranto",
+   "prantear",
+   "gemido",
+   "gemer",
+   "gemidos",
+   "angustia",
+   "aflicao",
+   "aflicoes",
+   "afliccao",
+   "afligir",
+   "dor",
+   "dores",
+   "sofrimento",
+   "sofrer",
+   "soframos"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "medo",
+  "label": "medo e temor",
+  "words": [
+   "medo",
+   "temor",
+   "temer",
+   "temei",
+   "temes",
+   "temeu",
+   "temia",
+   "assust*",
+   "tremer",
+   "tremor",
+   "terror",
+   "pavor",
+   "espanto"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "esperanca",
+  "label": "esperança",
+  "words": [
+   "esperanca",
+   "esperar",
+   "esperei",
+   "esperamos",
+   "esperanca*",
+   "aguardar",
+   "aguardo",
+   "confiar",
+   "confiai",
+   "confio",
+   "confianca",
+   "promessa*",
+   "promessas",
+   "futuro",
+   "porvir"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "fe",
+  "label": "fé",
+  "words": [
+   "fe",
+   "fiel",
+   "fieis",
+   "fidelidade",
+   "crer",
+   "cri",
+   "cre",
+   "creu",
+   "crente",
+   "crentes",
+   "creem",
+   "acreditar",
+   "certeza"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "perdao",
+  "label": "perdão e misericórdia",
+  "words": [
+   "perdao",
+   "perdoar",
+   "perdoou",
+   "perdoai",
+   "perdoa",
+   "perdoados",
+   "perdoado",
+   "misericordia",
+   "misericordioso",
+   "compaixao",
+   "compadecer",
+   "compadecido",
+   "piedade",
+   "clemencia",
+   "gracia",
+   "graca",
+   "graciosa",
+   "favor"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "justica",
+  "label": "justiça e juízo",
+  "words": [
+   "justica",
+   "justo",
+   "justos",
+   "injustica",
+   "injusto",
+   "juiz",
+   "juiz*",
+   "julgar",
+   "julgou",
+   "julgai",
+   "julgamento",
+   "juizo",
+   "sentenca",
+   "sentenciar",
+   "condenar",
+   "condenacao",
+   "retidao",
+   "equidade",
+   "direito"
+  ],
+  "prio": 2.3,
+  "variants": 1
+ },
+ {
+  "key": "sabedoria",
+  "label": "sabedoria e entendimento",
+  "words": [
+   "sabedoria",
+   "sabio",
+   "sabios",
+   "sabia",
+   "sabias",
+   "entendimento",
+   "entender",
+   "inteligencia",
+   "prudencia",
+   "prudente",
+   "ensino",
+   "ensinar",
+   "ensinou",
+   "ensinai",
+   "mestre",
+   "mestres",
+   "aprender",
+   "aprendei",
+   "conhecimento",
+   "ciencia",
+   "instrucao",
+   "conselho",
+   "conselhos",
+   "discipulo",
+   "discipulos"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "oracao",
+  "label": "oração",
+  "words": [
+   "oracao",
+   "oracoes",
+   "orar",
+   "orai",
+   "oro",
+   "oramos",
+   "orou",
+   "orando",
+   "suplica",
+   "suplicas",
+   "suplicar",
+   "suplicai",
+   "clamar",
+   "clamo",
+   "clamei",
+   "clamor",
+   "rogar",
+   "rogo",
+   "rogai",
+   "pedir",
+   "pedi",
+   "pedis",
+   "pedido",
+   "intercessao",
+   "jejum",
+   "jejuar"
+  ],
+  "prio": 2.8,
+  "variants": 1
+ },
+ {
+  "key": "louvor",
+  "label": "louvor e adoração",
+  "words": [
+   "louvor",
+   "louvar",
+   "louvai",
+   "louvarei",
+   "louvou",
+   "louvores",
+   "adoracao",
+   "adorar",
+   "adorai",
+   "adoro",
+   "adorou",
+   "cantico",
+   "canticos",
+   "hino",
+   "hinos",
+   "salmo",
+   "salmos",
+   "cantem",
+   "cantai",
+   "harpa*",
+   "lira",
+   "instrumento",
+   "tambor",
+   "tamboril",
+   "trombeta*",
+   "musica"
+  ],
+  "prio": 2.5,
+  "variants": 1
+ },
+ {
+  "key": "palavra",
+  "label": "a Palavra",
+  "words": [
+   "palavra",
+   "palavras",
+   "escritura",
+   "escrituras",
+   "livro",
+   "livros",
+   "escrito",
+   "escreveu",
+   "escrevi",
+   "escrevei",
+   "escrever",
+   "carta",
+   "cartas",
+   "rolo",
+   "ler",
+   "leia",
+   "lede",
+   "leitura",
+   "profecia",
+   "profecias",
+   "profetizar",
+   "evangelho",
+   "testemunho",
+   "testemunhar",
+   "testamento"
+  ],
+  "prio": 2.3,
+  "variants": 1
+ },
+ {
+  "key": "liberdade",
+  "label": "liberdade",
+  "words": [
+   "liberdade",
+   "livre",
+   "livres",
+   "libertado",
+   "libertados",
+   "libertacao",
+   "cativeiro",
+   "cativo",
+   "cativos",
+   "prisao",
+   "preso",
+   "presos",
+   "prisioneiro",
+   "prisioneiros",
+   "grilhoes",
+   "algemas",
+   "escravo",
+   "escravos",
+   "escravidao",
+   "servidao",
+   "jugo"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "nascimento",
+  "label": "nascimento",
+  "words": [
+   "nascimento",
+   "nascer",
+   "nasceu",
+   "nasce",
+   "nascido",
+   "nascidos",
+   "menino",
+   "meninos",
+   "crianca",
+   "criancas",
+   "infancia",
+   "bebe",
+   "bebes",
+   "gerar",
+   "gerou",
+   "geracao",
+   "geracoes",
+   "genealogia",
+   "concebeu",
+   "conceber",
+   "gravida",
+   "gravidez",
+   "ventre",
+   "parto",
+   "filhinho"
+  ],
+  "prio": 2.4,
+  "variants": 1
+ },
+ {
+  "key": "morte",
+  "label": "morte e sepulcro",
+  "words": [
+   "morte",
+   "morto",
+   "mortos",
+   "morrer",
+   "morreu",
+   "morrem",
+   "morri",
+   "morrerei",
+   "morremos",
+   "matar",
+   "matou",
+   "mataram",
+   "assassinar",
+   "assassino",
+   "sepultura",
+   "sepultar",
+   "sepultado",
+   "tumba",
+   "tumulo",
+   "sepulcros",
+   "cova",
+   "covas",
+   "cinza",
+   "cinzas",
+   "defunto",
+   "defuntos"
+  ],
+  "prio": 2.3,
+  "variants": 1
+ },
+ {
+  "key": "vida",
+  "label": "vida e ressurreição",
+  "words": [
+   "vida",
+   "vidas",
+   "viver",
+   "viveu",
+   "vive",
+   "vivei",
+   "vivemos",
+   "vivo",
+   "vivos",
+   "viva",
+   "vivificar",
+   "vivificou",
+   "vivente",
+   "viventes",
+   "respirar",
+   "alma",
+   "almas"
+  ],
+  "prio": 1.3,
+  "variants": 1
+ },
+ {
+  "key": "pecado",
+  "label": "pecado e trevas",
+  "words": [
+   "pecado",
+   "pecados",
+   "pecador",
+   "pecadores",
+   "pecar",
+   "pecou",
+   "pequei",
+   "pecamos",
+   "iniquidade",
+   "iniquidades",
+   "maldade",
+   "maldades",
+   "mal",
+   "malvado",
+   "malvados",
+   "impio",
+   "impios",
+   "transgressao",
+   "transgressoes",
+   "culpa",
+   "culpado",
+   "culpados",
+   "vergonha",
+   "engano",
+   "enganar",
+   "mentira",
+   "mentiras",
+   "mentir",
+   "mentiroso",
+   "tentacao",
+   "tentar",
+   "tentou",
+   "ladrao",
+   "roubar",
+   "roubo",
+   "furto",
+   "adulterio"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "ira",
+  "label": "ira de Deus",
+  "words": [
+   "irado",
+   "irados",
+   "furor",
+   "furioso",
+   "indignacao",
+   "indignar",
+   "castigo",
+   "castigar",
+   "castigou",
+   "castigos",
+   "juizos",
+   "vingar",
+   "vinganca",
+   "vingador",
+   "retribuir",
+   "retribuicao",
+   "ferir",
+   "feriu",
+   "maldicao",
+   "maldito",
+   "malditos",
+   "amaldicoar"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "humildade",
+  "label": "humildade e servo",
+  "words": [
+   "humildade",
+   "humilde",
+   "humildes",
+   "humilhar",
+   "humilhou",
+   "servo",
+   "servos",
+   "servir",
+   "serviu",
+   "servico",
+   "servical",
+   "servicais",
+   "obediencia",
+   "obedecer",
+   "obedeceu",
+   "obedientes",
+   "submeter",
+   "sujeitar",
+   "pequeninos",
+   "pequenino",
+   "pequeno",
+   "pequenos",
+   "pobre",
+   "pobres",
+   "pobreza",
+   "necessitado",
+   "necessitados",
+   "mendigo",
+   "mendigos",
+   "viuva",
+   "viuvas",
+   "orfao",
+   "orfaos",
+   "estrangeiro",
+   "estrangeiros"
+  ],
+  "prio": 2.1,
+  "variants": 1
+ },
+ {
+  "key": "forca",
+  "label": "força e poder",
+  "words": [
+   "forca",
+   "forcas",
+   "forte",
+   "fortes",
+   "fortalecer",
+   "fortalece",
+   "fortaleceu",
+   "fortaleza",
+   "poder",
+   "poderes",
+   "poderoso",
+   "poderosa",
+   "poderosos",
+   "poderio",
+   "valente",
+   "valentes",
+   "valor",
+   "coragem",
+   "corajoso",
+   "animo",
+   "animai",
+   "esforcai",
+   "esforco",
+   "gigante",
+   "gigantes"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "casamento",
+  "label": "casamento e aliança",
+  "words": [
+   "casamento",
+   "casar",
+   "casou",
+   "casaram",
+   "casai",
+   "marido",
+   "maridos",
+   "esposa",
+   "esposas",
+   "esposo",
+   "noiva",
+   "noivo",
+   "noivos",
+   "nupcias",
+   "bodas",
+   "matrimonio",
+   "matrimonios",
+   "mulher",
+   "mulheres",
+   "varao",
+   "varoes",
+   "homem",
+   "homens",
+   "adao",
+   "eva"
+  ],
+  "prio": 2.1,
+  "variants": 1
+ },
+ {
+  "key": "sacrificio",
+  "label": "sacrifício e altar",
+  "words": [
+   "sacrificio",
+   "sacrificios",
+   "sacrificar",
+   "sacrificou",
+   "oferta",
+   "ofertas",
+   "oferecer",
+   "ofereceu",
+   "oferecei",
+   "holocausto",
+   "holocaustos",
+   "altar",
+   "altares",
+   "sacerdote",
+   "sacerdotes",
+   "sacerdocio",
+   "levita",
+   "levitas",
+   "oblacao",
+   "expiacao"
+  ],
+  "prio": 2.2,
+  "variants": 1
+ },
+ {
+  "key": "estrada_emaus",
+  "label": "viajantes",
+  "words": [
+   "viajar",
+   "viajou",
+   "viajante",
+   "viajantes",
+   "andar",
+   "andou",
+   "andai",
+   "andaram",
+   "andando",
+   "seguir",
+   "seguiu",
+   "segui",
+   "seguimos",
+   "seguem",
+   "seguidores",
+   "peregrino",
+   "peregrinos",
+   "peregrinacao"
+  ],
+  "prio": 1.9,
+  "variants": 1
+ },
+ {
+  "key": "mundo",
+  "label": "o mundo",
+  "words": [
+   "mundo",
+   "mundos",
+   "universo",
+   "criacao",
+   "criar",
+   "criou",
+   "criador",
+   "criaturas",
+   "criatura",
+   "principio",
+   "comeco",
+   "genesis",
+   "fundacao",
+   "natureza",
+   "nacoes",
+   "nacao",
+   "povo",
+   "povos",
+   "gentios"
+  ],
+  "prio": 1.1,
+  "variants": 1
+ },
+ {
+  "key": "maos",
+  "label": "as mãos",
+  "words": [
+   "mao",
+   "maos",
+   "dedo",
+   "dedos",
+   "palma",
+   "palmas",
+   "punho",
+   "braco",
+   "bracos"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "olhos",
+  "label": "os olhos",
+  "words": [
+   "olho",
+   "olhos",
+   "vista",
+   "olhar",
+   "olhou",
+   "olhai",
+   "olhando",
+   "vigia",
+   "viu",
+   "vendo"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "coracao",
+  "label": "o coração",
+  "words": [
+   "coracao",
+   "coracoes",
+   "peito",
+   "entranhas",
+   "intimo"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "voz",
+  "label": "a voz",
+  "words": [
+   "voz",
+   "vozes",
+   "boca",
+   "bocas",
+   "labios",
+   "lingua",
+   "clamor",
+   "gritar",
+   "gritou",
+   "grito",
+   "clamar",
+   "clamou"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "ouvido",
+  "label": "ouvir e escutar",
+  "words": [
+   "ouvido",
+   "ouvidos",
+   "ouvir",
+   "ouviu",
+   "ouvi",
+   "ouvis",
+   "ouvindo",
+   "ouviram",
+   "escutar",
+   "escutou",
+   "escutai",
+   "atenta",
+   "atencao"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "pes_caminho",
+  "label": "os pés no caminho",
+  "words": [
+   "pe",
+   "pes",
+   "pegadas",
+   "calcanhar",
+   "calcanhares",
+   "sandalia",
+   "sandalias",
+   "descalco"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "rosto",
+  "label": "o rosto",
+  "words": [
+   "cabeca",
+   "cabecas",
+   "rosto",
+   "rostos",
+   "face",
+   "faces",
+   "fronte",
+   "cabelo",
+   "cabelos",
+   "barba",
+   "testa"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "ossos",
+  "label": "os ossos secos",
+  "words": [
+   "osso",
+   "ossos",
+   "esqueleto",
+   "secos",
+   "carne",
+   "carnes",
+   "corpo",
+   "corpos"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "familia",
+  "label": "a família",
+  "words": [
+   "pai",
+   "pais",
+   "filha",
+   "filhas",
+   "irma",
+   "irmas",
+   "avo",
+   "neto",
+   "netos",
+   "familia",
+   "familias",
+   "parente",
+   "parentes"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "tempo_dias",
+  "label": "os dias e os anos",
+  "words": [
+   "dia",
+   "dias",
+   "ano",
+   "anos",
+   "mes",
+   "meses",
+   "semana",
+   "semanas",
+   "hoje",
+   "amanha",
+   "tarde",
+   "manha",
+   "tempo",
+   "tempos",
+   "hora",
+   "horas",
+   "estacao"
+  ],
+  "prio": 1.2,
+  "variants": 4
+ },
+ {
+  "key": "subir_monte",
+  "label": "subir ao monte",
+  "words": [
+   "subir",
+   "subiu",
+   "subiram",
+   "subindo",
+   "subi",
+   "sobe",
+   "suba",
+   "desceu",
+   "desceram",
+   "descer",
+   "descendo",
+   "desce"
+  ],
+  "prio": 1.4,
+  "variants": 4
+ },
+ {
+  "key": "retorno",
+  "label": "o retorno",
+  "words": [
+   "voltar",
+   "voltou",
+   "voltaram",
+   "voltei",
+   "volta",
+   "retornar",
+   "retornou",
+   "regressar",
+   "regressou"
+  ],
+  "prio": 1.4,
+  "variants": 4
+ },
+ {
+  "key": "presente_dadiva",
+  "label": "entregar um presente",
+  "words": [
+   "entregar",
+   "entregou",
+   "entregaram",
+   "entregue",
+   "presente",
+   "presentes",
+   "dadiva",
+   "dadivas"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "levantar",
+  "label": "levantar-se",
+  "words": [
+   "levantar",
+   "levantou",
+   "levantaram",
+   "levanta",
+   "levantai",
+   "erguer",
+   "ergueu",
+   "ergueram",
+   "erguido"
+  ],
+  "prio": 1.4,
+  "variants": 4
+ },
+ {
+  "key": "dialogo",
+  "label": "conversa e ordem",
+  "words": [
+   "respondeu",
+   "responderam",
+   "responder",
+   "perguntou",
+   "ordenou",
+   "mandou",
+   "mandado",
+   "mandar",
+   "mandaram",
+   "falou"
+  ],
+  "prio": 1.2,
+  "variants": 4
+ },
+ {
+  "key": "pacto_estatutos",
+  "label": "pacto e estatutos",
+  "words": [
+   "pacto",
+   "pactos",
+   "juramento",
+   "jurou",
+   "jurar",
+   "jurei",
+   "estatutos",
+   "estatuto",
+   "ordenancas",
+   "decretos",
+   "preceitos"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "heranca_limites",
+  "label": "a herança e os limites",
+  "words": [
+   "heranca",
+   "herancas",
+   "herdar",
+   "herdou",
+   "herdeiro",
+   "herdeiros",
+   "porcao",
+   "limite",
+   "limites",
+   "fronteira",
+   "termo"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "servo_servico",
+  "label": "o servo",
+  "words": [
+   "servo",
+   "servos",
+   "serva",
+   "servas",
+   "criado",
+   "criados",
+   "escravo",
+   "escrava"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "nome_gloria",
+  "label": "o nome e a glória",
+  "words": [
+   "nome",
+   "nomes",
+   "gloria",
+   "honra",
+   "fama",
+   "renome",
+   "majestade",
+   "esplendor"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "verdade_luz",
+  "label": "a verdade",
+  "words": [
+   "verdade",
+   "verdadeiro",
+   "verdadeira",
+   "verdadeiros",
+   "veracidade"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "bondade",
+  "label": "a bondade",
+  "words": [
+   "bem",
+   "bom",
+   "boa",
+   "bondade",
+   "benigno",
+   "benignidade",
+   "bondoso",
+   "bondosa",
+   "bons",
+   "boas",
+   "melhor"
+  ],
+  "prio": 1.2,
+  "variants": 4
+ },
+ {
+  "key": "jesus_ensina",
+  "label": "Jesus ensina a multidão",
+  "words": [
+   "jesus",
+   "mestre",
+   "ensinar",
+   "ensinou",
+   "ensinava",
+   "ensinando",
+   "ensino",
+   "ensinos",
+   "parabola",
+   "parabolas",
+   "sermao",
+   "doutrina"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "discipulos",
+  "label": "os discípulos",
+  "words": [
+   "discipulos",
+   "discipulo",
+   "apostolo",
+   "apostolos",
+   "doze",
+   "companheiros",
+   "companhia",
+   "seguidores",
+   "irmaos",
+   "irmao"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "samaria_poco",
+  "label": "a samaritana no poço",
+  "words": [
+   "samaritano",
+   "samaritana",
+   "samaritanos",
+   "samaria",
+   "sicar",
+   "balde",
+   "cantaro"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "caim_abel",
+  "label": "Caim e Abel",
+  "words": [
+   "caim",
+   "abel",
+   "fratricida",
+   "primicias"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "rebeca_poco",
+  "label": "Rebeca no poço",
+  "words": [
+   "rebeca",
+   "raquel",
+   "lea",
+   "labao",
+   "hagar",
+   "miriam",
+   "noemi",
+   "jezabel",
+   "hanna"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "jose_sonhos",
+  "label": "José e os sonhos",
+  "words": [
+   "jose",
+   "tunica",
+   "tunicas",
+   "espiga",
+   "espigas",
+   "feixe",
+   "feixes",
+   "ismaelitas",
+   "potifar",
+   "mercadores",
+   "sonhador",
+   "sonhou"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "tribos_israel",
+  "label": "as doze tribos",
+  "words": [
+   "tribo",
+   "tribos",
+   "ruben",
+   "simeao",
+   "levi",
+   "juda",
+   "dan",
+   "naftali",
+   "gade",
+   "aser",
+   "issacar",
+   "zebulom",
+   "efraim",
+   "manasses",
+   "benjamim",
+   "gileade"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "arao_sacerdote",
+  "label": "Arão e o tabernáculo",
+  "words": [
+   "arao",
+   "mitra",
+   "efode",
+   "peitoral",
+   "amendoeira",
+   "incensario",
+   "propiciatorio"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "samuel_chamado",
+  "label": "Samuel é chamado",
+  "words": [
+   "samuel",
+   "eli",
+   "silo",
+   "vidente",
+   "videntes"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "sansao",
+  "label": "Sansão",
+  "words": [
+   "sansao",
+   "dalila",
+   "nazireu",
+   "nazireus",
+   "cabelo",
+   "cabelos",
+   "tosquiar",
+   "tosquiou",
+   "gaza",
+   "dagom"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "profeta",
+  "label": "o profeta",
+  "words": [
+   "isaias",
+   "jeremias",
+   "ezequiel",
+   "oseias",
+   "amos",
+   "miqueias",
+   "habacuque",
+   "sofonias",
+   "ageu",
+   "zacarias",
+   "malaquias",
+   "abdias",
+   "naum",
+   "profeta",
+   "profetas"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "elias_carmelo",
+  "label": "Elias no Carmelo",
+  "words": [
+   "elias",
+   "carmelo",
+   "baal",
+   "baalins",
+   "jezabel",
+   "acabe"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "daniel_leoes",
+  "label": "Daniel e os leões",
+  "words": [
+   "daniel",
+   "leoes",
+   "leao",
+   "cova",
+   "covas",
+   "dario",
+   "medos",
+   "sadraque",
+   "misaque",
+   "abednego"
+  ],
+  "prio": 3.6,
+  "variants": 4
+ },
+ {
+  "key": "davi_golias",
+  "label": "Davi e Golias",
+  "words": [
+   "golias",
+   "funda",
+   "fundas",
+   "filisteu",
+   "filisteus",
+   "campeao",
+   "gigante",
+   "elah"
+  ],
+  "prio": 3.6,
+  "variants": 4
+ },
+ {
+  "key": "davi_harpa",
+  "label": "Davi e a harpa",
+  "words": [
+   "harpa",
+   "harpas",
+   "citara",
+   "citaras",
+   "alaude",
+   "alaudes",
+   "musica",
+   "musicos",
+   "cantor",
+   "cantores",
+   "cantico",
+   "canticos",
+   "instrumento",
+   "instrumentos",
+   "salmista",
+   "tocar"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "salomao_sabedoria",
+  "label": "Salomão e a sabedoria",
+  "words": [
+   "salomao",
+   "proverbios",
+   "eclesiastes",
+   "cantares",
+   "prudente"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "absalao_rebeliao",
+  "label": "Absalão",
+  "words": [
+   "absalao",
+   "joabe",
+   "abner",
+   "amnon",
+   "adonias",
+   "aitofel",
+   "rebeliao",
+   "rebelou",
+   "rebelde",
+   "rebeldes",
+   "conspiracao",
+   "conspirou"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "reino_dividido",
+  "label": "o reino dividido",
+  "words": [
+   "roboao",
+   "jeroboao",
+   "ezequias",
+   "josias",
+   "manasses",
+   "uzias",
+   "jeoiaquim",
+   "zedequias",
+   "josafa",
+   "amazias",
+   "acaz",
+   "jotao",
+   "omri"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "ester_palacio",
+  "label": "Ester no palácio",
+  "words": [
+   "ester",
+   "mardoqueu",
+   "hama",
+   "vasti",
+   "persa",
+   "persas",
+   "assuero",
+   "purim",
+   "edito",
+   "rainha",
+   "rainhas",
+   "palacio",
+   "palacios"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "neemias_reconstrucao",
+  "label": "reconstruindo os muros",
+  "words": [
+   "neemias",
+   "esdras",
+   "zorobabel",
+   "reconstruir",
+   "reconstruiu",
+   "reconstruida",
+   "reedificar",
+   "reedificou",
+   "edificar",
+   "edificou",
+   "edificaram",
+   "edificado",
+   "obreiros",
+   "operarios",
+   "construir",
+   "construiu",
+   "construiram"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "jo_provacao",
+  "label": "perseverança na provação",
+  "words": [
+   "paciencia",
+   "perseveranca",
+   "perseverar",
+   "perseverou",
+   "suportar",
+   "suportou",
+   "suportam",
+   "provacao",
+   "provacoes",
+   "provar",
+   "provou",
+   "provado",
+   "provados",
+   "aflito",
+   "aflitos",
+   "cinza",
+   "cinzas"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "principes_conselho",
+  "label": "príncipes e chefes",
+  "words": [
+   "principe",
+   "principes",
+   "chefe",
+   "chefes",
+   "capitao",
+   "capitaes",
+   "governador",
+   "governadores",
+   "autoridade",
+   "autoridades",
+   "magistrados",
+   "juizes",
+   "anciaos"
+  ],
+  "prio": 1.8,
+  "variants": 4
+ },
+ {
+  "key": "mensageiro",
+  "label": "o mensageiro",
+  "words": [
+   "enviou",
+   "enviar",
+   "enviei",
+   "enviaram",
+   "mensageiro",
+   "mensageiros",
+   "mensagem",
+   "embaixador",
+   "embaixadores",
+   "recado",
+   "correio"
+  ],
+  "prio": 1.6,
+  "variants": 4
+ },
+ {
+  "key": "povos_vizinhos",
+  "label": "os povos vizinhos",
+  "words": [
+   "moabe",
+   "moabitas",
+   "edom",
+   "edomitas",
+   "amom",
+   "amonitas",
+   "cananeus",
+   "amorreus",
+   "heteus",
+   "jebuseus",
+   "sidom",
+   "tiro",
+   "damasco",
+   "siria"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "anjo",
+  "label": "anjos",
+  "words": [
+   "anjo*",
+   "gabriel",
+   "miguel",
+   "querubim",
+   "querubins",
+   "serafim",
+   "serafins",
+   "sonho*",
+   "visao",
+   "visoes"
+  ],
+  "prio": 2,
+  "variants": 1
+ },
+ {
+  "key": "arca",
+  "label": "arca e dilúvio",
+  "words": [
+   "noe",
+   "arca",
+   "diluvio"
+  ],
+  "prio": 3,
+  "variants": 1
+ },
+ {
+  "key": "eden_fruto",
+  "label": "o Éden e o fruto",
+  "words": [
+   "adao",
+   "eva",
+   "eden",
+   "paraiso",
+   "proibido",
+   "proibida",
+   "desobedeceu",
+   "desobediencia",
+   "costela"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "torre_babel",
+  "label": "a torre de Babel",
+  "words": [
+   "babel",
+   "torre",
+   "torres",
+   "tijolo",
+   "tijolos",
+   "betume",
+   "confundiu",
+   "confusao",
+   "dispersou",
+   "dispersaram",
+   "idioma",
+   "idiomas"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "sodoma_fogo",
+  "label": "Sodoma",
+  "words": [
+   "sodoma",
+   "gomorra",
+   "enxofre",
+   "sal",
+   "estatua",
+   "fugiu",
+   "fugir",
+   "fugiram",
+   "arruinou",
+   "destruicao",
+   "destruidas"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "moria_carneiro",
+  "label": "o monte Moriá",
+  "words": [
+   "moria",
+   "isaque",
+   "lenha",
+   "cutelo",
+   "abraao",
+   "carneiro",
+   "carneiros"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "escada_jaco",
+  "label": "a escada de Jacó",
+  "words": [
+   "escada",
+   "escadas",
+   "betel",
+   "peniel",
+   "jaboque",
+   "travesseiro"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "egito_nilo",
+  "label": "o Egito e o Nilo",
+  "words": [
+   "egito",
+   "egipcio",
+   "egipcios",
+   "nilo",
+   "piramide",
+   "piramides",
+   "esfinge"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "sarca_ardente",
+  "label": "a sarça ardente",
+  "words": [
+   "sarca",
+   "sarcas",
+   "ardia",
+   "ardendo",
+   "arde",
+   "horebe",
+   "descalco",
+   "sandalias",
+   "pastoreava"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "pragas_egito",
+  "label": "as pragas do Egito",
+  "words": [
+   "praga",
+   "pragas",
+   "granizo",
+   "mosca",
+   "moscas",
+   "sapos",
+   "primogenito",
+   "primogenitos",
+   "ferida",
+   "feridas"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "exodo_mar",
+  "label": "a travessia do mar",
+  "words": [
+   "exodo",
+   "israelitas",
+   "israelita",
+   "dividiu",
+   "dividiram",
+   "divididas",
+   "atravessaram",
+   "passagem",
+   "perseguiu",
+   "perseguidores",
+   "cavaleiros"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "mana_codornizes",
+  "label": "maná no deserto",
+  "words": [
+   "mana",
+   "codorniz",
+   "codornizes",
+   "recolher",
+   "recolhiam",
+   "recolheram",
+   "porcao"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "josue_jerico",
+  "label": "os muros de Jericó",
+  "words": [
+   "josue",
+   "jerico",
+   "derrubou",
+   "derrubados",
+   "cercaram",
+   "cercou",
+   "conquistou",
+   "conquista",
+   "gibeao"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "gideao_cantaros",
+  "label": "Gideão e as tochas",
+  "words": [
+   "gideao",
+   "midianitas",
+   "midianita",
+   "midia",
+   "cantaros",
+   "cantaro",
+   "tochas",
+   "tocha",
+   "lamparas",
+   "trezentos",
+   "amalequitas",
+   "amalec"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "elias_carro",
+  "label": "o carro de fogo",
+  "words": [
+   "eliseu",
+   "redemoinho",
+   "arrebatado"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "fornalha_ardente",
+  "label": "a fornalha ardente",
+  "words": [
+   "fornalha",
+   "fornalhas",
+   "ardente",
+   "estatua",
+   "atados",
+   "queimar",
+   "queimado",
+   "queimou"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "exilio_babilonia",
+  "label": "o exílio na Babilônia",
+  "words": [
+   "exilio",
+   "exilados",
+   "exilado",
+   "nabucodonosor",
+   "caldeus",
+   "caldeia",
+   "assirios",
+   "assiria",
+   "senaqueribe",
+   "salgueiros",
+   "ceifaram",
+   "deportados",
+   "deportado",
+   "babilonia"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "natividade",
+  "label": "a natividade",
+  "words": [
+   "manjedoura",
+   "manjedouras",
+   "estrebaria",
+   "estalagem",
+   "magos",
+   "oriente",
+   "mirra"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "batismo_jordao",
+  "label": "batismo no Jordão",
+  "words": [
+   "jordao",
+   "batista",
+   "batismo",
+   "batismos",
+   "batizar",
+   "batizou",
+   "batizado",
+   "batizados",
+   "batizando"
+  ],
+  "prio": 3.2,
+  "variants": 4
+ },
+ {
+  "key": "tentacao",
+  "label": "tentação no deserto",
+  "words": [
+   "tentacao",
+   "tentacoes",
+   "tentar",
+   "tentado",
+   "tentador",
+   "tentou",
+   "satanas",
+   "diabo",
+   "demonio",
+   "demonios",
+   "imundo",
+   "imundos",
+   "jejum",
+   "jejuar",
+   "jejuou"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "cura",
+  "label": "Jesus cura os enfermos",
+  "words": [
+   "curou",
+   "curar",
+   "cura",
+   "curas",
+   "curado",
+   "curados",
+   "sarar",
+   "sarou",
+   "sarado",
+   "sara",
+   "enfermo",
+   "enfermos",
+   "enfermidade",
+   "enfermidades",
+   "doente",
+   "doentes",
+   "doenca",
+   "doencas",
+   "leproso",
+   "leprosos",
+   "lepra",
+   "paralitico",
+   "paralitica",
+   "febre",
+   "aleijado"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "cego",
+  "label": "o cego que vê",
+  "words": [
+   "cego",
+   "cegos",
+   "cegueira",
+   "vista",
+   "enxergar",
+   "enxergou",
+   "enxergam",
+   "luminar",
+   "guia",
+   "guias"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "multiplicacao",
+  "label": "pães e peixes para a multidão",
+  "words": [
+   "multidao",
+   "multidoes",
+   "cesto",
+   "cestos",
+   "cestas",
+   "alimentar",
+   "alimentou",
+   "saciar",
+   "saciados",
+   "saciou",
+   "fartar",
+   "fartaram",
+   "sobras",
+   "sobraram",
+   "milagre",
+   "milagres",
+   "sinal",
+   "sinais"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "barco_galileia",
+  "label": "barco no mar da Galileia",
+  "words": [
+   "barco",
+   "barcos",
+   "nau",
+   "naus",
+   "remar",
+   "remou",
+   "remaram",
+   "afundar",
+   "afundando",
+   "duvidar",
+   "duvidou",
+   "duvida",
+   "atravessar",
+   "atravessou",
+   "travessia",
+   "margem",
+   "pescaria"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "hosana",
+  "label": "hosana e bênçãos",
+  "words": [
+   "hosana",
+   "bendito",
+   "benditos",
+   "bendita",
+   "bendizer",
+   "bendizei",
+   "bendisse",
+   "bendigo",
+   "bendiga",
+   "bencao",
+   "bencaos",
+   "abencoar",
+   "abencoou",
+   "abencoados",
+   "abencoado",
+   "aclamar",
+   "aclamavam"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "lava_pes",
+  "label": "lavar os pés",
+  "words": [
+   "pes",
+   "lavar",
+   "lavou",
+   "lavais",
+   "lavai",
+   "lavado",
+   "lavados",
+   "lavamento",
+   "bacia",
+   "toalha",
+   "servir",
+   "serviu",
+   "servico",
+   "humildemente",
+   "sandalias"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "ceia",
+  "label": "a última ceia",
+  "words": [
+   "ceia",
+   "mesa",
+   "mesas",
+   "calice",
+   "calices",
+   "vinho",
+   "vinhos",
+   "comer",
+   "comeu",
+   "comei",
+   "comemos",
+   "comida",
+   "convidados",
+   "convidado",
+   "banquete",
+   "jantar"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "getsemani",
+  "label": "Getsêmani",
+  "words": [
+   "getsemani",
+   "horto",
+   "agonia",
+   "vigiar",
+   "vigiai",
+   "vigiem",
+   "velai",
+   "velar",
+   "dormir",
+   "dormiam",
+   "dormindo",
+   "adormecidos"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "tumulo_vazio",
+  "label": "o túmulo vazio",
+  "words": [
+   "tumulo",
+   "tumulos",
+   "sepulcro",
+   "sepulcros",
+   "sepultura",
+   "sepulturas",
+   "sepultado",
+   "sepultados",
+   "sepultar",
+   "sepultou",
+   "sepultamento",
+   "ressurreicao",
+   "ressuscitou",
+   "ressuscitado",
+   "madrugada"
+  ],
+  "prio": 3.4,
+  "variants": 4
+ },
+ {
+  "key": "ascensao",
+  "label": "a ascensão",
+  "words": [
+   "ascender",
+   "ascendeu",
+   "ascensao",
+   "subir",
+   "subiu",
+   "subiram",
+   "subindo",
+   "elevado",
+   "elevou",
+   "elevar",
+   "levantado",
+   "exaltado",
+   "exaltou"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "pentecostes",
+  "label": "Pentecostes",
+  "words": [
+   "pentecostes",
+   "consolador",
+   "linguas"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "igreja",
+  "label": "a primeira igreja",
+  "words": [
+   "igreja",
+   "igrejas",
+   "congregacao",
+   "congregacoes",
+   "assembleia",
+   "assembleias",
+   "comunhao",
+   "reuniao",
+   "reunidos",
+   "reunir",
+   "reuniram",
+   "unidos",
+   "unidade",
+   "membros"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "arrependimento",
+  "label": "arrependimento e conversão",
+  "words": [
+   "arrepender",
+   "arrependei",
+   "arrependeu",
+   "arrependimento",
+   "arrependam",
+   "arrependido",
+   "converter",
+   "converteu",
+   "convertei",
+   "conversao",
+   "convertido",
+   "publicano",
+   "publicanos",
+   "contrito",
+   "contrita"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ },
+ {
+  "key": "salvacao",
+  "label": "salvação e resgate",
+  "words": [
+   "salvacao",
+   "salvador",
+   "salvar",
+   "salvou",
+   "salvo",
+   "salvos",
+   "salva",
+   "salvai",
+   "redencao",
+   "redentor",
+   "redimir",
+   "redimiu",
+   "resgatar",
+   "resgate",
+   "resgatou",
+   "livramento",
+   "livrar",
+   "livrou",
+   "libertador"
+  ],
+  "prio": 3.0,
+  "variants": 4
+ },
+ {
+  "key": "juizo",
+  "label": "o juízo",
+  "words": [
+   "juizo",
+   "juizos",
+   "juiz",
+   "juizes",
+   "julgar",
+   "julgou",
+   "julgado",
+   "julgamento",
+   "julgamentos",
+   "condenar",
+   "condenacao",
+   "condenado",
+   "sentenca",
+   "castigo",
+   "castigar",
+   "castigou",
+   "tribunal"
+  ],
+  "prio": 2.6,
+  "variants": 4
+ },
+ {
+  "key": "trono_celeste",
+  "label": "o trono celestial",
+  "words": [
+   "anciaos",
+   "cordeiro",
+   "apocalipse",
+   "revelacao",
+   "selo",
+   "selos",
+   "trombeta",
+   "trombetas",
+   "besta",
+   "dragao",
+   "viventes",
+   "candeeiros"
+  ],
+  "prio": 2.8,
+  "variants": 4
+ }
+]
