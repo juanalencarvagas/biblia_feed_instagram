@@ -66,3 +66,7 @@ Depois disso, os arquivos ficam guardados na pasta do projeto (`almeida-livre.js
 - Mesmo sem internet, cada card dispõe de ilustração temática local.
 - Identificador discreto de versículo (`v1`, `v2`, ...) no início de cada trecho nos cards.
 - Navegação direta para o próximo capítulo no rodapé do último card da leitura.
+
+## Direitos autorais
+
+© 2026 Juan Alencar e Silva. Todos os direitos reservados. Você pode copiar, mas cite a fonte: **Bíblia Feed — Juan Alencar e Silva**.

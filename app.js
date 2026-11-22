@@ -1,4 +1,6 @@
 'use strict';
+/* Bíblia Feed © 2026 Juan Alencar e Silva. Todos os direitos reservados.
+   Pode copiar, mas cite a fonte: Bíblia Feed — Juan Alencar e Silva. */
 
 const $ = id => document.getElementById(id);
 const PT_TO_EN = {
