@@ -66,6 +66,7 @@ Depois disso, os arquivos ficam guardados na pasta do projeto (`almeida-livre.js
 - Mesmo sem internet, cada card dispõe de ilustração temática local.
 - Identificador discreto de versículo (`v1`, `v2`, ...) no início de cada trecho nos cards.
 - Navegação direta para o próximo capítulo no rodapé do último card da leitura.
+- Botão **Negrito nas palavras-chave** (acima do feed) liga/desliga o destaque em negrito de substantivos e nomes próprios, para facilitar a leitura; a escolha fica salva no navegador.
 
 ## Direitos autorais
 

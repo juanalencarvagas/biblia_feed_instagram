@@ -30,7 +30,7 @@ function ref(v){ return `${v.book} ${v.chapter}:${v.first}${v.last!==v.first?'�
 function refEn(v){ const name = PT_TO_EN[v.book] || v.book; return `${name} ${v.chapter}:${v.first}${v.last!==v.first?'-'+v.last:''}`; }
 function key(v){ return `${v.bookId}:${v.chapter}:${v.first}:${v.last}`; }
 function textOf(v){ return v.items.map(x=>x.text).join(' '); }
-function verseHtml(v){ return v.items.map(x => `<span class="vnum">v${x.number}</span> ${esc(x.text)}`).join(' '); }
+function verseHtml(v){ return v.items.map(x => `<span class="vnum">v${x.number}</span> ${keywordHtml(x.text)}`).join(' '); }
 function textWithVerseNums(v){ return v.items.map(x => `v${x.number} ${x.text}`).join(' '); }
 function enTextOf(v){ return (v.itemsEn || []).map(x=>x.text).join(' '); }
 function hash(str){ let h = 0; for (let i=0;i<str.length;i++) h = ((h<<5)-h) + str.charCodeAt(i), h |= 0; return Math.abs(h); }
@@ -118,6 +118,34 @@ const FALLBACK_SCENES = ['ceu','montanhas','rio','campo','jardim','mar','nuvens'
 let sceneExact = new Map(), scenePrefix = new Map(), sceneInfo = new Map();
 
 function norm(w){ return w.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+
+// Destaque de palavras-chave (substantivos) em negrito. Heurística leve, sem dicionário morfológico:
+// ignora palavras funcionais, verbos conjugados (pelas terminações mais comuns) e advérbios em -mente;
+// palavras com inicial maiúscula no meio da frase (nomes próprios) sempre entram.
+const STOP_EXTRA = new Set('contra desde durante conforme segundo perante apos enquanto ora nele nela neles nelas nisso nisto disso disto daquele daquela logo apenas somente senao porquanto ninguem alguem algum alguma alguns algumas qualquer quanto quanta quantos quantas cujo cuja bem grande bom boa bons boas'.split(' '));
+const VERB_WORDS = new Set('diz dizem dizia faz fazem fazia vem vinha vinham pode podem podia deve devem quer querem quis sabe sabem sabia tera fara sera farao serao estao terao irao dirao verao virao'.split(' '));
+const NOUN_EXC = new Set('mar lugar mulher poder prazer dever altar luar amanhecer fe'.split(' '));
+const VERB_END = /(ar|er|ir|ou|iu|am|ava|avam|iam|ando|endo|indo|aram|eram|iram|asse|esse|isse|amos|emos|imos|arao|erao|irao|aria|eria|iria|assem|essem|issem)$/;
+function isNounLike(word, midSentenceCap){
+  const n = norm(word);
+  if (midSentenceCap) return n.length > 2;
+  if (n.length < 3 && n !== 'fe') return false;
+  if (STOP.has(n) || STOP_EXTRA.has(n) || VERB_WORDS.has(n)) return false;
+  if (NOUN_EXC.has(n)) return true;
+  if (n.endsWith('mente') || VERB_END.test(n) || (n.length > 4 && /(ara|era|ira)$/.test(n))) return false;
+  return true;
+}
+function keywordHtml(text){
+  const parts = String(text).split(/([\p{L}]+)/u);
+  let out = '';
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2 === 0) { out += esc(parts[i]); continue; }
+    const w = parts[i], before = parts.slice(0, i).join('').trimEnd();
+    const cap = w[0] !== w[0].toLowerCase() && before !== '' && !/[.!?:;"“”«»—–-]$/.test(before);
+    out += isNounLike(w, cap) ? `<span class="kw">${esc(w)}</span>` : esc(w);
+  }
+  return out;
+}
 function buildSceneIndex(manifest){
   sceneExact = new Map(); scenePrefix = new Map(); sceneInfo = new Map();
   for (const m of manifest) {
@@ -175,7 +203,7 @@ function renderCaption(v, meta){
         ? `${esc(meta.prompt)}`
         : `O que Deus está falando ao seu coração em ${esc(ref(v))}?`;
   return `
-    <div class="caption"><strong>palavra_do_dia</strong>${esc(ref(v))} — ${esc(txt)}</div>
+    <div class="caption"><strong>palavra_do_dia</strong>${esc(ref(v))} — ${keywordHtml(txt)}</div>
     <div class="microcopy">${line}</div>
     <div class="smallmuted">${esc(v.book)} · Capítulo ${v.chapter} · Almeida Livre</div>
     ${renderFooterTranslation(v)}`;
@@ -366,6 +394,16 @@ document.querySelectorAll('[data-action]').forEach(b => b.onclick = ()=>action(b
 $('allPeople').onclick = ()=>openDialog('Personagens bíblicos','<p>Escolha um personagem no topo da página ou na lista de sugestões. Cada perfil leva a uma passagem relacionada à história dele.</p>');
 $('profileSwitch').onclick = e => { e.preventDefault(); chooser(); };
 renderPeople();
+
+// Toggle de negrito nas palavras-chave: só alterna uma classe no <body>, sem refazer o feed.
+function applyBoldNouns(on){
+  document.body.classList.toggle('bold-nouns', on);
+  const b = $('boldToggle');
+  b.setAttribute('aria-pressed', String(on));
+  b.querySelector('.state').textContent = on ? 'ligado' : 'desligado';
+}
+applyBoldNouns(safeJSON('bf_bold', false) === true);
+$('boldToggle').onclick = () => { const on = !document.body.classList.contains('bold-nouns'); save('bf_bold', on); applyBoldNouns(on); toast(on ? 'Palavras-chave em negrito' : 'Negrito nas palavras-chave desligado'); };
 
 async function init(){
   try {

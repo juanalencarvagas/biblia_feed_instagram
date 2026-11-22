@@ -145,3 +145,11 @@ a{color:var(--blue)}
 
 /* Rodapé de direitos autorais */
 .sitefoot{border-top:1px solid var(--line);margin-top:28px;padding:20px 8px 8px;color:#80868e;font-size:12px;line-height:1.7;text-align:center}.sitefoot b{color:#a8b2c4;font-weight:650}
+
+/* Negrito nas palavras-chave (toggle) */
+.feedtools{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.boldtoggle{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line)!important;border-radius:999px;padding:5px 11px;color:#c9d1dc!important;font-size:12px!important}
+.boldtoggle b{font-family:Georgia,serif;font-size:14px}
+.boldtoggle[aria-pressed="true"]{background:#1d2a3d!important;border-color:var(--blue)!important;color:#fff!important}
+.boldtoggle[aria-pressed="true"] .state{color:var(--blue);font-weight:700}
+body.bold-nouns .kw{font-weight:800;text-shadow:none;box-shadow:inset 0 -.32em 0 rgba(235,185,90,.38);border-radius:2px}
