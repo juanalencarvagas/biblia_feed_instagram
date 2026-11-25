@@ -67,6 +67,7 @@ Depois disso, os arquivos ficam guardados na pasta do projeto (`almeida-livre.js
 - Identificador discreto de versículo (`v1`, `v2`, ...) no início de cada trecho nos cards.
 - Navegação direta para o próximo capítulo no rodapé do último card da leitura.
 - Botão **Negrito nas palavras-chave** (acima do feed) liga/desliga o destaque em negrito de substantivos e nomes próprios, para facilitar a leitura; a escolha fica salva no navegador.
+- **Login opcional com Google** no canto superior direito (perfil). Fica oculto até você preencher `GOOGLE_CLIENT_ID` no início do bloco "Login opcional" em `app.js`. Crie o ID em Google Cloud Console → APIs e serviços → Credenciais → ID do cliente OAuth (aplicativo da Web) e adicione a origem em "Origens JavaScript autorizadas" (ex.: `http://localhost:8765`). Em telas estreitas (onde o perfil lateral some), o login fica num botão redondo acima do feed. O login só mostra nome e foto neste navegador; nada é enviado a servidor do projeto.
 
 ## Direitos autorais
 

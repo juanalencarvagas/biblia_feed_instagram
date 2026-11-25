@@ -226,6 +226,8 @@ function createPost(v, index){
   const isLast = !onlySaved && index === entries.length - 1;
   const nextInfo = isLast ? getNextChapterInfo() : null;
   const prevInfo = isLast ? getPrevChapterInfo() : null;
+  const curiosityPrompt = `Poderia falar alguma curiosidade sobre ${v.book} capítulo ${v.chapter}? utilizando contexto e algo interessante que não está tão óbvio.`;
+  const curiosityUrl = `https://chatgpt.com/?q=${encodeURIComponent(curiosityPrompt)}`;
   const nextCardHtml = nextInfo ? `
     <div class="next-chapter-card">
       <div class="next-chapter-info">
@@ -233,6 +235,7 @@ function createPost(v, index){
         <strong>${esc(nextInfo.label)}</strong>
       </div>
       <div class="next-chapter-actions">
+        <a class="btn-curiosity" href="${curiosityUrl}" target="_blank" rel="noopener noreferrer">✨ Curiosidade no ChatGPT</a>
         ${prevInfo ? `<button class="prev-chapter-link" type="button">← ${esc(prevInfo.label)}</button>` : ''}
         <button class="btn-next-chapter" type="button">
           <span>Ler ${esc(nextInfo.label)}</span>
@@ -394,6 +397,84 @@ document.querySelectorAll('[data-action]').forEach(b => b.onclick = ()=>action(b
 $('allPeople').onclick = ()=>openDialog('Personagens bíblicos','<p>Escolha um personagem no topo da página ou na lista de sugestões. Cada perfil leva a uma passagem relacionada à história dele.</p>');
 $('profileSwitch').onclick = e => { e.preventDefault(); chooser(); };
 renderPeople();
+
+// Login opcional com Google (Google Identity Services). Só aparece se GOOGLE_CLIENT_ID estiver preenchido;
+// com ele vazio, nenhum script do Google é carregado. O login apenas personaliza o perfil neste navegador
+// (nome e foto); nenhum dado é enviado a servidor do projeto. O Client ID é público por natureza.
+const GOOGLE_CLIENT_ID = '';
+let gUser = safeJSON('bf_user', null);
+
+function decodeJwt(t){
+  const b64 = t.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+  const bin = atob(b64.padEnd(Math.ceil(b64.length / 4) * 4, '='));
+  return JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))));
+}
+function renderProfile(){
+  const icon = $('profileIcon'), box = $('googleLogin');
+  $('profileName').textContent = gUser ? gUser.name : 'minha_jornada';
+  $('profileSub').textContent = gUser ? 'Conectado com Google' : 'Minha leitura da Bíblia';
+  icon.replaceChildren();
+  if (gUser && /^https:\/\//.test(gUser.picture || '')) {
+    const img = document.createElement('img');
+    img.src = gUser.picture; img.alt = ''; img.referrerPolicy = 'no-referrer';
+    icon.append(img);
+  } else icon.textContent = '✝';
+  fillLoginBox(box);
+  renderAccountBtn();
+}
+// Preenche um contêiner com o botão do Google (deslogado) ou o botão "Sair" (logado).
+function fillLoginBox(box){
+  box.replaceChildren();
+  if (!GOOGLE_CLIENT_ID) { box.hidden = true; return; }
+  if (gUser) {
+    const out = document.createElement('button');
+    out.className = 'googleout'; out.type = 'button'; out.textContent = 'Sair da conta Google';
+    out.onclick = signOutGoogle;
+    box.append(out); box.hidden = false;
+  } else if (window.google?.accounts?.id) {
+    box.hidden = false;
+    google.accounts.id.renderButton(box, { theme: 'filled_black', size: 'medium', shape: 'pill', text: 'signin_with', locale: 'pt-BR' });
+  } else box.hidden = true;
+}
+// Acesso à conta em telas estreitas (onde a coluna do perfil fica oculta).
+function renderAccountBtn(){
+  const b = $('accountBtn');
+  b.hidden = !GOOGLE_CLIENT_ID;
+  b.replaceChildren();
+  if (gUser && /^https:\/\//.test(gUser.picture || '')) {
+    const img = document.createElement('img');
+    img.src = gUser.picture; img.alt = ''; img.referrerPolicy = 'no-referrer';
+    b.append(img);
+  } else b.append(gUser ? gUser.name.charAt(0).toUpperCase() : '👤');
+  b.title = gUser ? `Conta: ${gUser.name}` : 'Entrar com o Google';
+  b.setAttribute('aria-label', b.title);
+}
+function openAccount(){
+  openDialog('Conta', `<p>${gUser ? 'Conectado como <b>' + esc(gUser.name) + '</b>.' : 'Entre com o Google para personalizar seu perfil neste navegador. É opcional.'}</p><div class="googlelogin" id="dialogLogin"></div>`,
+    () => fillLoginBox($('dialogLogin')));
+}
+function onGoogleCredential(resp){
+  try {
+    const p = decodeJwt(resp.credential);
+    gUser = { name: p.name || p.given_name || 'Leitor', picture: p.picture || '' };
+    save('bf_user', gUser); renderProfile(); closeDialog(); toast(`Olá, ${gUser.name.split(' ')[0]}!`);
+  } catch { toast('Não foi possível entrar com o Google'); }
+}
+function signOutGoogle(){
+  gUser = null; localStorage.removeItem('bf_user');
+  window.google?.accounts?.id?.disableAutoSelect();
+  renderProfile(); closeDialog(); toast('Você saiu da conta Google');
+}
+function loadGoogle(){
+  if (!GOOGLE_CLIENT_ID) return;
+  const sc = document.createElement('script');
+  sc.src = 'https://accounts.google.com/gsi/client'; sc.async = true; sc.defer = true;
+  sc.onload = () => { google.accounts.id.initialize({ client_id: GOOGLE_CLIENT_ID, callback: onGoogleCredential }); renderProfile(); };
+  document.head.append(sc);
+}
+$('accountBtn').onclick = openAccount;
+renderProfile();
+loadGoogle();
 
 // Toggle de negrito nas palavras-chave: só alterna uma classe no <body>, sem refazer o feed.
 function applyBoldNouns(on){

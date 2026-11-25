@@ -135,12 +135,15 @@ a{color:var(--blue)}
 .btn-next-chapter{display:inline-flex;align-items:center;gap:8px;background:#e5bd7f;color:#18130e;border:0;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background-color .15s}
 .btn-next-chapter:hover{background:#f4cf96;transform:translateX(2px)}
 .btn-next-chapter .arrow{font-size:16px;line-height:1}
+.btn-curiosity{display:inline-flex;align-items:center;gap:6px;background:transparent;color:#e5bd7f;border:1px solid #e5bd7f;padding:9px 16px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;transition:background-color .15s}
+.btn-curiosity:hover{background:rgba(229,189,127,.12)}
 .prev-chapter-link{background:transparent;border:0;color:#9aa4b5;font-size:12px;cursor:pointer;padding:6px 10px;border-radius:6px;transition:color .15s}
 .prev-chapter-link:hover{color:#e5bd7f}
 @media(max-width:760px){
   .next-chapter-card{flex-direction:column;align-items:stretch;text-align:center;gap:14px}
   .next-chapter-actions{flex-direction:column;align-items:stretch;gap:8px}
   .btn-next-chapter{justify-content:center;padding:12px 18px}
+  .btn-curiosity{justify-content:center;padding:11px 18px}
 }
 
 /* Rodapé de direitos autorais */
@@ -153,3 +156,14 @@ a{color:var(--blue)}
 .boldtoggle[aria-pressed="true"]{background:#1d2a3d!important;border-color:var(--blue)!important;color:#fff!important}
 .boldtoggle[aria-pressed="true"] .state{color:var(--blue);font-weight:700}
 body.bold-nouns .kw{font-weight:800;text-shadow:none;box-shadow:inset 0 -.32em 0 rgba(235,185,90,.38);border-radius:2px}
+
+/* Login opcional com Google */
+.profileicon{overflow:hidden}.profileicon img{width:100%;height:100%;object-fit:cover}
+.profiletext{min-width:0}.profiletext b,.profiletext small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.googlelogin:not([hidden]){margin:-17px 0 26px;display:flex}
+.googleout{border:1px solid var(--line);background:transparent;color:#c9d1dc;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:600}
+
+/* Acesso à conta em telas estreitas (perfil lateral oculto abaixo de 1210px) */
+.accountbtn{display:none;width:32px;height:32px;padding:0;border-radius:50%;overflow:hidden;border:1px solid var(--line)!important;background:#303749;color:#ebc78d;font-size:15px;font-weight:700;place-items:center}
+.accountbtn img{width:100%;height:100%;object-fit:cover}
+@media (max-width:1210px){.accountbtn:not([hidden]){display:grid}}
