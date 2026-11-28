@@ -194,7 +194,6 @@ function renderCardInner(v, meta){
   return `<div class="art art-feature"><div class="feature-head"><span>✧ BÍBLIA FEED</span><span>DESTAQUE DA LEITURA</span></div><div class="feature-center"><div class="feature-label"></div>${verse}</div><div class="feature-beams" ${imgstyle} role="img" aria-label="Imagem temática: ${esc(scene.label)}"></div><div class="feature-bottom">CONHECER · REFLETIR · PRATICAR</div></div>`;
 }
 function renderCaption(v, meta){
-  const txt = textOf(v);
   const line = meta.template === 'sponsored'
     ? `Siga um plano de leitura e continue meditando em ${esc(ref(v))}.`
     : meta.template === 'community'
@@ -203,7 +202,6 @@ function renderCaption(v, meta){
         ? `${esc(meta.prompt)}`
         : `O que Deus está falando ao seu coração em ${esc(ref(v))}?`;
   return `
-    <div class="caption"><strong>palavra_do_dia</strong>${esc(ref(v))} — ${keywordHtml(txt)}</div>
     <div class="microcopy">${line}</div>
     <div class="smallmuted">${esc(v.book)} · Capítulo ${v.chapter} · Almeida Livre</div>
     ${renderFooterTranslation(v)}`;
@@ -226,8 +224,6 @@ function createPost(v, index){
   const isLast = !onlySaved && index === entries.length - 1;
   const nextInfo = isLast ? getNextChapterInfo() : null;
   const prevInfo = isLast ? getPrevChapterInfo() : null;
-  const curiosityPrompt = `Poderia falar alguma curiosidade sobre ${v.book} capítulo ${v.chapter}? utilizando contexto e algo interessante que não está tão óbvio.`;
-  const curiosityUrl = `https://chatgpt.com/?q=${encodeURIComponent(curiosityPrompt)}`;
   const nextCardHtml = nextInfo ? `
     <div class="next-chapter-card">
       <div class="next-chapter-info">
@@ -235,7 +231,6 @@ function createPost(v, index){
         <strong>${esc(nextInfo.label)}</strong>
       </div>
       <div class="next-chapter-actions">
-        <a class="btn-curiosity" href="${curiosityUrl}" target="_blank" rel="noopener noreferrer">✨ Curiosidade no ChatGPT</a>
         ${prevInfo ? `<button class="prev-chapter-link" type="button">← ${esc(prevInfo.label)}</button>` : ''}
         <button class="btn-next-chapter" type="button">
           <span>Ler ${esc(nextInfo.label)}</span>
@@ -295,6 +290,14 @@ function showFeed(){
     return;
   }
   const frag = document.createDocumentFragment();
+  if (!onlySaved) {
+    const { book, chapter } = entries[0];
+    const curiosityPrompt = `Poderia falar alguma curiosidade sobre ${book} capítulo ${chapter}? utilizando contexto e algo interessante que não está tão óbvio.`;
+    const curiosity = document.createElement('div');
+    curiosity.className = 'curiosity-top';
+    curiosity.innerHTML = `<a class="btn-curiosity" href="https://chatgpt.com/?q=${encodeURIComponent(curiosityPrompt)}" target="_blank" rel="noopener noreferrer">✨ Curiosidade no ChatGPT</a>`;
+    frag.append(curiosity);
+  }
   entries.forEach((e, i) => frag.append(createPost(e, i)));
   $('posts').append(frag);
 }

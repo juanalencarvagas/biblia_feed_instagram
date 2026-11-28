@@ -136,6 +136,7 @@ a{color:var(--blue)}
 .btn-next-chapter:hover{background:#f4cf96;transform:translateX(2px)}
 .btn-next-chapter .arrow{font-size:16px;line-height:1}
 .btn-curiosity{display:inline-flex;align-items:center;gap:6px;background:transparent;color:#e5bd7f;border:1px solid #e5bd7f;padding:9px 16px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;transition:background-color .15s}
+.curiosity-top{margin:0 0 16px}
 .btn-curiosity:hover{background:rgba(229,189,127,.12)}
 .prev-chapter-link{background:transparent;border:0;color:#9aa4b5;font-size:12px;cursor:pointer;padding:6px 10px;border-radius:6px;transition:color .15s}
 .prev-chapter-link:hover{color:#e5bd7f}
